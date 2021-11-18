@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 2.5em;
   max-width: 512px; /*768px;*/
 }
 .logo {
