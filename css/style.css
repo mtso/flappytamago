@@ -28,11 +28,13 @@ body {
   font-family: 'Shippori Antique';
 }
 .timeline a {
-  color: red;
   text-decoration: none;
 }
 .timeline a:hover {
   text-decoration: underline;
+}
+.index-link {
+  color: red;
 }
 .year {
   font-weight: bold;
