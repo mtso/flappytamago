@@ -40,10 +40,6 @@ body {
 .year {
   font-weight: bold;
 }
-.image {
-  width: 48.5%;
-  margin-right: 0.05em;
-}
 
 .logo img {
   width: 100%;
@@ -51,4 +47,14 @@ body {
 
 .page-title {
   margin-bottom: 1em;
+}
+
+.flexrow {
+   display: flex;
+   align-items:stretch;
+   flex-wrap: wrap;
+   grid-gap: 8px;
+}
+.flexcol {
+  width: calc(50% - 4px);
 }
