@@ -15,7 +15,7 @@ body {
   width: 100px;
   height: 100px;
   background-color: red;
-  margin: 2em 0;
+  margin: 2em 0 1em;
 }
 .title {
   font-family: 'Gloria Hallelujah';
@@ -41,4 +41,8 @@ body {
 .image {
   width: 48.5%;
   margin-right: 0.05em;
+}
+
+.logo img {
+  width: 100%;
 }
