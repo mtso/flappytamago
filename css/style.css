@@ -36,7 +36,9 @@ body {
 }
 .year {
   font-weight: bold;
+  margin-bottom: 1em;
 }
 .image {
-  width: 100%;
+  width: 48.5%;
+  margin-right: 0.05em;
 }
