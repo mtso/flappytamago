@@ -58,3 +58,10 @@ body {
 .flexcol {
   width: calc(50% - 4px);
 }
+
+::selection {
+  background: #221CFF;
+}
+::-moz-selection {
+  background: #221CFF;
+}
