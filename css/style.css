@@ -65,3 +65,7 @@ body {
 ::-moz-selection {
   background: #221CFF;
 }
+
+.muted {
+  opacity: 0.4;
+}
