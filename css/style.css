@@ -39,6 +39,7 @@ body {
 }
 .year {
   font-weight: bold;
+  margin-top: 1em;
 }
 
 .logo img {
@@ -57,6 +58,9 @@ body {
 }
 .flexcol {
   width: calc(50% - 4px);
+}
+.flexcol-full {
+  width: 100%;
 }
 
 ::selection {
