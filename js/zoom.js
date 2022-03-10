@@ -12,15 +12,16 @@
       const onOpen = function (e) {
         const m = createModal();
         const onClose = function (e) {
+          e.preventDefault();
           m.remove();
           m.removeEventListener("click", onClose);
-          m.removeEventListener("touchstart", onClose);
+          m.removeEventListener("touchend", onClose);
         };
         m.addEventListener("click", onClose);
-        m.addEventListener("touchstart", onClose);
+        m.addEventListener("touchend", onClose);
       };
       el.addEventListener("click", onOpen);
-      el.addEventListener("touchstart", onOpen);
+      el.addEventListener("touchend", onOpen);
       el.style.cursor = "zoom-in";
 
       function createMargin(w) {
