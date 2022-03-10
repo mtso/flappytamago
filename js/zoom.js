@@ -12,7 +12,6 @@
       const onOpen = function (e) {
         const m = createModal();
         const onClose = function (e) {
-          e.preventDefault();
           m.remove();
           m.removeEventListener("click", onClose);
           m.removeEventListener("touchend", onClose);
@@ -46,7 +45,7 @@
         const imgDiv = document.createElement("div");
         imgDiv.style.cursor = "zoom-out";
         imgDiv.addEventListener('touchend', function(e) {
-          e.preventDefault();
+          e.stopPropagation();
         });
 
         const img = document.createElement("img");
