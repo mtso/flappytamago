@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/2022/kitten-please/static/css/main.06381c13.chunk.css",
-    "main.js": "/2022/kitten-please/static/js/main.359d290f.chunk.js",
-    "main.js.map": "/2022/kitten-please/static/js/main.359d290f.chunk.js.map",
+    "main.css": "/2022/kitten-please/static/css/main.571f1b2f.chunk.css",
+    "main.js": "/2022/kitten-please/static/js/main.53629ccd.chunk.js",
+    "main.js.map": "/2022/kitten-please/static/js/main.53629ccd.chunk.js.map",
     "runtime-main.js": "/2022/kitten-please/static/js/runtime-main.42648544.js",
     "runtime-main.js.map": "/2022/kitten-please/static/js/runtime-main.42648544.js.map",
     "static/js/2.4630d61b.chunk.js": "/2022/kitten-please/static/js/2.4630d61b.chunk.js",
     "static/js/2.4630d61b.chunk.js.map": "/2022/kitten-please/static/js/2.4630d61b.chunk.js.map",
     "index.html": "/2022/kitten-please/index.html",
-    "static/css/main.06381c13.chunk.css.map": "/2022/kitten-please/static/css/main.06381c13.chunk.css.map",
+    "static/css/main.571f1b2f.chunk.css.map": "/2022/kitten-please/static/css/main.571f1b2f.chunk.css.map",
     "static/js/2.4630d61b.chunk.js.LICENSE.txt": "/2022/kitten-please/static/js/2.4630d61b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.42648544.js",
     "static/js/2.4630d61b.chunk.js",
-    "static/css/main.06381c13.chunk.css",
-    "static/js/main.359d290f.chunk.js"
+    "static/css/main.571f1b2f.chunk.css",
+    "static/js/main.53629ccd.chunk.js"
   ]
 }
