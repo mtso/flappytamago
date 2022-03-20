@@ -45,7 +45,7 @@
 
         const imgDiv = document.createElement("div");
         imgDiv.style.cursor = "zoom-out";
-        imgDiv.addEventListener('touchend', function(e) {
+        imgDiv.addEventListener("touchend", function (e) {
           e.preventDefault();
           e.stopPropagation();
         });

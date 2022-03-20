@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>hihi - new animation</title>
+      <meta name="viewport" content="width=device-width; initial-scale: 1.0; minimum-scale: 0.5">
+      <style>
+        html, body {
+          padding: 0px;
+          margin: 0px;
+          width: 100%;
+        }
+        body {
+          background-color: #222;
+        }
+        button {
+          margin-top: 0.4rem;
+          margin-left: 0.2rem;
+          width: 10rem;
+          height: 2rem;
+        }
+      </style>
+    </head>
+    <body>
+        <canvas id="c" width="500" height="500" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 250px; height: 250px; left: 0px; top: 0px; touch-action: none; user-select: none;" class="lower-canvas"></canvas>
+        <canvas id="cursorCanvas" class="upper-canvas " width="500" height="500" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 250px; height: 250px; left: 0px; top: 0px; touch-action: none; user-select: none; cursor: crosshair; pointer-events: none"></canvas>
+
+        <button id="clear">Clear</button>
+        <button id="playback">Playback</button>
+        <button id="save">Save</button>
+        <div style="margin-top: 1em; margin-left: 0.2rem;">
+          <a id="saved-id" target="_blank" style="padding: 0.6em 0.4em; background-color: rgb(228, 228, 228); font-family: sans-serif;"></a>
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+        <script type="text/javascript" src="/js/hihi-editor.js"></script>
+    </body>
+</html>
