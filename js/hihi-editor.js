@@ -184,13 +184,13 @@
       .then((resp) => resp.json())
       .then((result) => {
         console.log(result);
-        /*
+
         const protocol = document.location.protocol;
         const host = document.location.host;
         const base = protocol + "//" + host;
         const viewUrl = base + "/hihi?id=" + result.id;
-        */
-        const viewUrl = "https://hihi.fi/a/" + result.id;
+
+        // const viewUrl = "https://hihi.fi/a/" + result.id;
         $("saved-id").innerText = viewUrl;
         $("saved-id").setAttribute("href", viewUrl);
       });
