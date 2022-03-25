@@ -19,6 +19,17 @@
           width: 10rem;
           height: 2rem;
         }
+        @keyframes spin_ccw {
+          from {
+            transform: rotate(360deg);
+          }
+          to {
+            transform: rotate(0deg);
+          }
+        }
+        .spin_ccw {
+          animation: spin_ccw 1s linear 1s infinite;
+        }
       </style>
     </head>
     <body>
@@ -30,6 +41,12 @@
         <button id="save">Save</button>
         <div style="margin-top: 1em; margin-left: 0.2rem;">
           <a id="saved-id" target="_blank" style="padding: 0.6em 0.4em; background-color: rgb(228, 228, 228); font-family: sans-serif;"></a>
+        </div>
+        <div id="activity-loader" style="display: none; color: #ccc; font-family: sans-serif; margin-top: 0.6em; margin-left: 0.2rem;">
+          Generating Thumbnail
+          <svg id="activity" width="14" xmlns="http://www.w3.org/2000/svg" class="spin_ccw h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+          </svg>
         </div>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>

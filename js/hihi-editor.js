@@ -1,4 +1,6 @@
 (function () {
+  // var API_URL = "http://localhost:3750";
+  var API_URL = "https://hihi.fly.dev";
   var throttle = function (thresh, cb) {
     var last = Date.now();
     return function (event) {
@@ -111,6 +113,21 @@
     canvas.backgroundColor = "black";
   }
 
+  function checkThumbnail(el, id, retries) {
+    retries = retries || 0;
+    el.style.display = "block";
+
+    fetch(API_URL + "/v1/animations/" + id + "?c=" + Date.now())
+      .then((resp) => resp.json())
+      .then((data) => {
+        if (!data.thumbnail_url && retries < 30) {
+          setTimeout(() => checkThumbnail(el, id, retries + 1), 5000);
+        } else {
+          el.style.display = "none";
+        }
+      });
+  }
+
   $("playback").addEventListener("click", function (event) {
     // todo: intention is to make it easier to see what
     // the playback will look like but resetting the canvas
@@ -171,7 +188,7 @@
 
   $("save").addEventListener("click", function (event) {
     console.log(encodeHihi(previousBuffer));
-    fetch("https://hihiapi.fly.dev/v1/animations", {
+    fetch(API_URL + "/v1/animations", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -185,14 +202,19 @@
       .then((result) => {
         console.log(result);
 
+        /*
         const protocol = document.location.protocol;
         const host = document.location.host;
         const base = protocol + "//" + host;
         const viewUrl = base + "/hihi?id=" + result.id;
+        */
 
         // const viewUrl = "https://hihi.fi/a/" + result.id;
+
+        const viewUrl = API_URL + "/a/" + result.id;
         $("saved-id").innerText = viewUrl;
         $("saved-id").setAttribute("href", viewUrl);
+        checkThumbnail($("activity-loader"), result.id);
       });
   });
 
